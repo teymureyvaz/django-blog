@@ -37,7 +37,8 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'blog'
+    'blog',
+    'taggit',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -105,3 +106,9 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
             os.path.join(BASE_DIR, 'static'),
             )
+
+EMAIL_HOST = 'smtp-mail.outlook.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER ='test@test.com'
+EMAIL_HOST_PASSWORD = 'test'
+EMAIL_USE_TLS = True
